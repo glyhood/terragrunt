@@ -4,7 +4,7 @@ terraform {
     bucket         = "yourS3-terraform-state"
     dynamodb_table = "yourdb-terraform-lock"
     encrypt        = true
-    key            = "master/eu-west-3/EC2/yourS3-terraform.tfstate"
+    key            = "staging/eu-west-3/EC2/yourS3-terraform.tfstate"
     region         = "eu-west-3"
   }
 }
