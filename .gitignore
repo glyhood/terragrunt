@@ -1,6 +1,15 @@
+
+# Created by https://www.gitignore.io/api/terraform
+# Edit at https://www.gitignore.io/?templates=terraform
+
+### Terraform ###
+# Temprorary folder for downloading the terraform modules in working directory during deployment
+.terragrunt-cache
+
 # Local .terraform directories
 **/.terraform/*
-
+.idea/**
+**/.terraform.*
 # .tfstate files
 *.tfstate
 *.tfstate.*
@@ -22,8 +31,11 @@ override.tf.json
 *_override.tf.json
 
 # Include override files you do wish to add to version control using negated pattern
-#
 # !example_override.tf
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+# End of https://www.gitignore.io/api/terraform
+
+plan
